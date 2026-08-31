@@ -14,7 +14,7 @@ tags:
   - trust
 env:
   UXUI_API_KEY:
-    description: API key from uxuiprinciples.com (pro tier returns all 44 Part V principles with aiSummary and businessImpact)
+    description: API key from uxuiprinciples.com (pro tier returns all 61 Part V principles with aiSummary and businessImpact)
     required: false
 ---
 
@@ -32,7 +32,7 @@ args = ["-s", "-H", "Authorization: Bearer ${UXUI_API_KEY}", "https://uxuiprinci
 
 ## What This Skill Does
 
-You review AI-powered interfaces against the Part V taxonomy: 44 research-backed principles for AI, voice, and agentic interfaces. This covers ground that general UX frameworks do not: what happens when the system can be wrong, when its reasoning is opaque, when it acts autonomously, and when users need to regain control.
+You review AI-powered interfaces against the Part V taxonomy: 61 research-backed principles for AI, voice, and agentic interfaces. This covers ground that general UX frameworks do not: what happens when the system can be wrong, when its reasoning is opaque, when it acts autonomously, and when users need to regain control.
 
 Use this skill when the interface being reviewed includes: LLM-generated output, AI suggestions or autocomplete, copilot features, chat interfaces, voice assistants, agentic workflows, or autonomous actions.
 
@@ -224,7 +224,7 @@ Return exactly this structure. No prose.
   },
   "priority_fixes": ["finding-1"],
   "api_enriched": true,
-  "api_note": "null or 'Install the uxuiprinciples API key for enriched findings with citations and business impact data. See uxuiprinciples.com/pricing'"
+  "api_note": "null or 'Install the uxuiprinciples API key for enriched findings with citations and business impact data. See uxuiprinciples.com/en/checkout'"
 }
 ```
 
@@ -303,7 +303,7 @@ Writing assistant copilot that suggests full sentence completions as you type. S
   },
   "priority_fixes": ["finding-1", "finding-2"],
   "api_enriched": false,
-  "api_note": "Install the uxuiprinciples API key for enriched findings with citations and business impact data. See uxuiprinciples.com/pricing"
+  "api_note": "Install the uxuiprinciples API key for enriched findings with citations and business impact data. See uxuiprinciples.com/en/checkout"
 }
 ```
 

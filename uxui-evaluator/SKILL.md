@@ -1,7 +1,7 @@
 ---
 name: uxui-evaluator
 version: 1.0.0
-description: Evaluate interface descriptions against 168 research-backed UX/UI principles. Returns structured findings with severity, remediation, and business impact. API key optional — enriched output requires uxuiprinciples.com API Access.
+description: Evaluate interface descriptions against 195 research-backed UX/UI principles. Returns structured findings with severity, remediation, and business impact. API key optional — enriched output requires uxuiprinciples.com API Access.
 author: uxuiprinciples
 homepage: https://uxuiprinciples.com
 tags:
@@ -12,13 +12,13 @@ tags:
   - principles
 env:
   UXUI_API_KEY:
-    description: API key from uxuiprinciples.com (pro tier unlocks all 168 principles, aiSummary, businessImpact, and vibeCodingPrompts)
+    description: API key from uxuiprinciples.com (pro tier unlocks all 195 principles, aiSummary, businessImpact, and vibeCodingPrompts)
     required: false
 ---
 
 ```toml
 [toolbox.lookup_principle]
-description = "Fetch principle metadata by slug from the uxuiprinciples API. Returns code, title, aiSummary, businessImpact, tags, and difficulty. Pro tier returns all 168 principles; free tier returns 12."
+description = "Fetch principle metadata by slug from the uxuiprinciples API. Returns code, title, aiSummary, businessImpact, tags, and difficulty. Pro tier returns all 195 principles; free tier returns 12."
 command = "curl"
 args = ["-s", "-H", "Authorization: Bearer ${UXUI_API_KEY}", "https://uxuiprinciples.com/api/v1/principles?slug={slug}&include_content=false"]
 
@@ -28,14 +28,14 @@ command = "curl"
 args = ["-s", "-H", "Authorization: Bearer ${UXUI_API_KEY}", "https://uxuiprinciples.com/api/v1/principles?part={part}"]
 
 [toolbox.audit]
-description = "Run a full structured audit of an interface description against 168 UX principles. Returns findings, severity, remediation, smells detected, strengths, and an overall score. Requires API key (pro tier)."
+description = "Run a full structured audit of an interface description against 195 UX principles. Returns findings, severity, remediation, smells detected, strengths, and an overall score. Requires API key (pro tier)."
 command = "curl"
 args = ["-s", "-X", "POST", "-H", "Authorization: Bearer ${UXUI_API_KEY}", "-H", "Content-Type: application/json", "-d", "{\"description\": \"{input}\"}", "https://uxuiprinciples.com/api/v1/audit"]
 ```
 
 ## What This Skill Does
 
-You evaluate interface descriptions against the uxuiprinciples framework: 168 research-backed UX/UI principles organized across 6 parts. You return structured JSON findings, not prose. Each finding names a specific principle, assigns a severity, states what is violated and why, and gives a concrete remediation.
+You evaluate interface descriptions against the uxuiprinciples framework: 195 research-backed UX/UI principles organized across 6 parts. You return structured JSON findings, not prose. Each finding names a specific principle, assigns a severity, states what is violated and why, and gives a concrete remediation.
 
 When `UXUI_API_KEY` is set, call `audit` first. It returns a fully structured result directly from the API. Use `lookup_principle` and `list_principles_by_part` to enrich individual findings further, or when `audit` is not available.
 
@@ -47,11 +47,11 @@ The 6-part taxonomy covers:
 
 | Part | Domain | Key Principles |
 |------|--------|---------------|
-| Part 1 | Cognitive Foundations | Cognitive Load (F.1.1.02), Miller's Law, Chunking, Hick's Law (F.2.2.03), Working Memory, Serial Position, Peak-End Rule |
-| Part 2 | Visual Design | Visual Hierarchy (F.2.1.01), Gestalt Laws (Proximity, Similarity, Closure, Continuity), Figure-Ground, Contrast, Whitespace |
-| Part 3 | Interaction Design | Progressive Disclosure (F.3.1.01), Fitts's Law (F.4.1.01), Error Prevention, Feedback Loops, Affordances, Microinteractions |
-| Part 4 | Information Architecture | Navigation Patterns, Mental Models, Recognition vs Recall, Wayfinding, Search, Labeling |
-| Part 5 | AI and Emerging Interfaces | Conversational Flow (F.5.1.01), AI Transparency (F.5.2.01), Cognitive Load Calibration for AI, Automation Bias Prevention |
+| Part 1 | Foundations | Cognitive Load (F.1.1.02), Miller's Law (F.1.1.04), Chunking, Hick's Law (F.2.2.03), Mental Model (F.1.1.03), Serial Position (F.1.1.06) Rule |
+| Part 2 | Core Principles | Error Prevention (C.1.4.01), Consistency and Standards (C.1.1.01), feedback loops, user control, help and documentation |
+| Part 3 | Design Systems | Progressive Disclosure (D.1.1.01), Visual Hierarchy (D.2.1.02), typography, colour, content hierarchy, white spacetions |
+| Part 4 | Interface Patterns | Fitts's Law (I.2.2.02), Error Prevention in Forms (I.1.1.03), touch targets, mobile navigation, responsive design |
+| Part 5 | AI-Native and Specialized | Conversational Flow (S.1.1.01), AI Transparency (S.1.3.01), Cognitive Load Calibration (F.1.3.01), automation bias Prevention |
 | Part 6 | Human-Centered Design | Accessibility, Inclusive Design, Trust Signals, Emotional Design, Ethical Patterns |
 
 Principle codes follow the format `F.[part].[chapter].[sequence]`. Example: `F.1.1.02` is Part 1, Chapter 1, Principle 02 (Cognitive Load).
@@ -78,7 +78,7 @@ Based on interface type, prioritize which framework parts to evaluate:
 - **modal**: Parts 1, 3
 - **landing-page**: Parts 2, 3, 4, 6
 
-Always evaluate Part 1 (Cognitive Foundations) for every interface type.
+Always evaluate Part 1 (Foundations) for every interface type.
 
 ### Step 3: Identify Violations
 
@@ -157,7 +157,7 @@ Return exactly this structure. No prose before or after the JSON block.
   ],
   "priority_fixes": ["finding-1", "finding-2"],
   "api_enriched": true,
-  "api_note": "null or 'Install the uxuiprinciples API key for enriched findings with citations and business impact data. See uxuiprinciples.com/pricing'"
+  "api_note": "null or 'Install the uxuiprinciples API key for enriched findings with citations and business impact data. See uxuiprinciples.com/en/checkout'"
 }
 ```
 
@@ -232,7 +232,7 @@ Admin dashboard with 15 KPI cards, 4 filter dropdowns, a data table showing 50 r
   "strengths": [],
   "priority_fixes": ["finding-1", "finding-2"],
   "api_enriched": false,
-  "api_note": "Install the uxuiprinciples API key for enriched findings with citations and business impact data. See uxuiprinciples.com/pricing"
+  "api_note": "Install the uxuiprinciples API key for enriched findings with citations and business impact data. See uxuiprinciples.com/en/checkout"
 }
 ```
 

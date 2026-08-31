@@ -8,9 +8,9 @@
 
 Five SKILL.md files that inject UX expertise into AI agents. Works with Cursor, Windsurf, kx, Claude Code, and any framework that reads SKILL.md.
 
-Each skill runs on LLM inference alone. Add a `UXUI_API_KEY` to unlock enriched output: principle codes, 2,098+ academic citations, severity from the taxonomy, and remediation recipes.
+Each skill runs on LLM inference alone. Add a `UXUI_API_KEY` to unlock enriched output: principle codes, 2,300+ academic citations, severity from the taxonomy, and remediation recipes.
 
-**Get an API key:** [uxuiprinciples.com/pricing](https://uxuiprinciples.com/pricing)
+**Get an API key:** [uxuiprinciples.com/en/checkout](https://uxuiprinciples.com/en/checkout)
 
 ---
 
@@ -18,9 +18,9 @@ Each skill runs on LLM inference alone. Add a `UXUI_API_KEY` to unlock enriched 
 
 | Skill | Description | API Required |
 |-------|-------------|-------------|
-| [uxui-evaluator](./uxui-evaluator/SKILL.md) | Evaluate interfaces against 168 research-backed UX/UI principles | Optional |
+| [uxui-evaluator](./uxui-evaluator/SKILL.md) | Evaluate interfaces against 195 research-backed UX/UI principles | Optional |
 | [interface-auditor](./interface-auditor/SKILL.md) | Detect UX antipatterns using the smell taxonomy | Optional |
-| [ai-interface-reviewer](./ai-interface-reviewer/SKILL.md) | Audit AI/LLM interfaces against the Part V taxonomy (44 principles) | Optional |
+| [ai-interface-reviewer](./ai-interface-reviewer/SKILL.md) | Audit AI/LLM interfaces against the Part V taxonomy (61 principles) | Optional |
 | [flow-checker](./flow-checker/SKILL.md) | Run preflight/postflight checklists against UX flows | Required (pro) |
 | [vibe-coding-advisor](./vibe-coding-advisor/SKILL.md) | Inject UX context into AI coding sessions before generating components | Optional |
 
@@ -57,13 +57,13 @@ UXUI_API_KEY = "uxui_live_..."
 Without a key, each skill evaluates using LLM inference and returns generic findings.
 
 With a key (pro tier), the toolbox calls return:
-- Principle codes (`F.1.1.02`, `S.1.3.01`, etc.) from the full 168-principle taxonomy
+- Principle codes (`F.1.1.02`, `S.1.3.01`, etc.) from the full 195-principle taxonomy
 - `aiSummary` fields with concise, citation-backed descriptions
-- `businessImpact` data from 2,098+ peer-reviewed sources
+- `businessImpact` data from 2,300+ peer-reviewed sources
 - `vibeCodingPrompts` for component-level implementation guidance
 - UX smell remediation recipes with step-by-step fixes
 
-**Plans:** [uxuiprinciples.com/pricing](https://uxuiprinciples.com/pricing) — API Access from $19/yr
+**Plans:** [uxuiprinciples.com/en/checkout](https://uxuiprinciples.com/en/checkout). API Access from $19/yr.
 
 ---
 
@@ -71,14 +71,14 @@ With a key (pro tier), the toolbox calls return:
 
 The skills reference the uxuiprinciples 6-part taxonomy:
 
-| Part | Domain |
-|------|--------|
-| Part 1 | Cognitive Foundations |
-| Part 2 | Visual Design |
-| Part 3 | Interaction Design |
-| Part 4 | Information Architecture |
-| Part 5 | AI and Specialized Domains |
-| Part 6 | Human-Centered Design |
+| Part | Domain | Principles |
+|------|--------|-----------|
+| Part 1 | Foundations | 32 |
+| Part 2 | Core Principles | 34 |
+| Part 3 | Design Systems | 22 |
+| Part 4 | Interface Patterns | 23 |
+| Part 5 | AI-Native and Specialized | 61 |
+| Part 6 | Human-Centered Excellence | 23 |
 
 ---
 

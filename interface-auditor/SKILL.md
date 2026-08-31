@@ -179,7 +179,7 @@ Return exactly this structure. No prose before or after the JSON block.
   ],
   "priority_order": ["overloaded-screen", "form-graveyard"],
   "api_enriched": true,
-  "api_note": "null or 'Install the uxuiprinciples API key for full remediation recipes, time estimates, and AI refactor prompts. See uxuiprinciples.com/pricing'"
+  "api_note": "null or 'Install the uxuiprinciples API key for full remediation recipes, time estimates, and AI refactor prompts. See uxuiprinciples.com/en/checkout'"
 }
 ```
 
@@ -272,7 +272,7 @@ Registration form asking for: first name, last name, email, password, phone numb
   "clean_areas": [],
   "priority_order": ["form-graveyard"],
   "api_enriched": false,
-  "api_note": "Install the uxuiprinciples API key for full remediation recipes, time estimates, and AI refactor prompts. See uxuiprinciples.com/pricing"
+  "api_note": "Install the uxuiprinciples API key for full remediation recipes, time estimates, and AI refactor prompts. See uxuiprinciples.com/en/checkout"
 }
 ```
 
@@ -315,7 +315,7 @@ Mobile app with a bottom navigation bar showing 4 icons only: no labels under th
   ],
   "priority_order": ["mystery-navigation"],
   "api_enriched": false,
-  "api_note": "Install the uxuiprinciples API key for full remediation recipes, time estimates, and AI refactor prompts. See uxuiprinciples.com/pricing"
+  "api_note": "Install the uxuiprinciples API key for full remediation recipes, time estimates, and AI refactor prompts. See uxuiprinciples.com/en/checkout"
 }
 ```
 

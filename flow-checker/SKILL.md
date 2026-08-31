@@ -136,7 +136,7 @@ Return exactly this structure. No prose.
   "key_principles": ["progressive-disclosure", "cognitive-load"],
   "common_smells": ["form-graveyard", "mystery-navigation"],
   "api_enriched": true,
-  "api_note": "null or 'Flow checklists require a pro API key for live smell linkage and severity metadata. See uxuiprinciples.com/pricing'"
+  "api_note": "null or 'Flow checklists require a pro API key for live smell linkage and severity metadata. See uxuiprinciples.com/en/checkout'"
 }
 ```
 
@@ -163,7 +163,7 @@ Return exactly this structure. No prose.
 
 **Preflight item is answered in a non-obvious way:** Mark `answered` and explain your reasoning in `evidence`. Don't under-credit the description.
 
-**API returns 403 (free tier):** Flows are pro-only. Set `api_enriched: false`. Continue with internal knowledge for all checklist items. Include: `"api_note": "Flow checklists require a pro API key. See uxuiprinciples.com/pricing"`.
+**API returns 403 (free tier):** Flows are pro-only. Set `api_enriched: false`. Continue with internal knowledge for all checklist items. Include: `"api_note": "Flow checklists require a pro API key. See uxuiprinciples.com/en/checkout"`.
 
 **Description is very short ("I'm building a signup form"):** Run preflight only. Set all items to `unanswered` with recommendations. Return `phase: preflight`.
 

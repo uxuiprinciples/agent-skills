@@ -72,17 +72,17 @@ Map the user's request to a component type, then apply the principle set below.
 |---|---|---|
 | Cognitive Load | `cognitive-load` | F.1.1.02 |
 | Hick's Law | `hicks-law` | F.2.2.03 |
-| Visual Hierarchy | `visual-hierarchy` | F.2.1.01 |
-| Progressive Disclosure | `progressive-disclosure` | F.3.1.01 |
-| Fitts's Law | `fitts-law` | F.4.1.01 |
-| Miller's Law | `millers-law` | F.1.2.02 |
-| Serial Position Effect | `serial-position-effect` | F.1.3.01 |
-| Recognition vs Recall | `recognition-rather-than-recall` | F.4.2.01 |
-| Mental Model | `mental-model` | F.4.3.01 |
-| Error Prevention | `error-prevention-in-forms` | F.3.3.01 |
+| Visual Hierarchy | `visual-hierarchy-law` | D.2.1.02 |
+| Progressive Disclosure | `progressive-disclosure` | D.1.1.01 |
+| Fitts's Law | `fitts-law` | I.2.2.02 |
+| Miller's Law | `millers-law` | F.1.1.04 |
+| Serial Position Effect | `serial-position-effect` | F.1.1.06 |
+| Recognition vs Recall | `recognition-rather-than-recall` | F.1.1.05 |
+| Mental Model | `mental-model` | F.1.1.03 |
+| Error Prevention in Forms | `error-prevention-in-forms-law` | I.1.1.03 |
 | Conversational Flow | `conversational-flow-principle` | S.1.1.01 |
 | AI Transparency | `ai-transparency` | S.1.3.01 |
-| AI Accuracy Communication | `ai-accuracy-communication` | — |
+| AI Accuracy Communication | `ai-accuracy-communication` | S.5.2.02 |
 
 ## Generation Workflow
 
@@ -177,7 +177,7 @@ Return exactly this structure. No prose before or after.
     "Second rule."
   ],
   "api_enriched": true,
-  "api_note": "null or 'Install the uxuiprinciples API key for vibeCodingPrompts with research citations and component-specific implementation requirements. See uxuiprinciples.com/pricing'"
+  "api_note": "null or 'Install the uxuiprinciples API key for vibeCodingPrompts with research citations and component-specific implementation requirements. See uxuiprinciples.com/en/checkout'"
 }
 ```
 
@@ -284,14 +284,14 @@ Building a settings page for a SaaS app. Users can manage their account, notific
   "tech_stack": null,
   "principles_applied": [
     {
-      "code": "F.3.1.01",
+      "code": "D.1.1.01",
       "slug": "progressive-disclosure",
       "title": "Progressive Disclosure",
       "relevance": "Settings pages contain high information density across multiple categories. Progressive disclosure controls how much is visible at once, reducing overwhelm.",
       "ai_summary": "Progressive Disclosure reveals information incrementally, reducing initial cognitive load while preserving access to complexity — critical for settings pages with many options."
     },
     {
-      "code": "F.4.2.01",
+      "code": "F.1.1.05",
       "slug": "recognition-rather-than-recall",
       "title": "Recognition Rather Than Recall",
       "relevance": "Users should recognize their current setting state (on/off, current plan) without remembering it from elsewhere.",
@@ -313,7 +313,7 @@ Building a settings page for a SaaS app. Users can manage their account, notific
     "Group related settings. Cognitive grouping reduces scanning load. Max 5-7 settings per group before adding a sub-section header."
   ],
   "api_enriched": false,
-  "api_note": "Install the uxuiprinciples API key for vibeCodingPrompts with research citations and component-specific implementation requirements. See uxuiprinciples.com/pricing"
+  "api_note": "Install the uxuiprinciples API key for vibeCodingPrompts with research citations and component-specific implementation requirements. See uxuiprinciples.com/en/checkout"
 }
 ```
 
