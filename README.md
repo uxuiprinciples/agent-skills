@@ -8,9 +8,11 @@
 
 Five SKILL.md files that inject UX expertise into AI agents. Works with Cursor, Windsurf, kx, Claude Code, and any framework that reads SKILL.md.
 
-Each skill runs on LLM inference alone. Add a `UXUI_API_KEY` to unlock enriched output: principle codes, 2,300+ academic citations, severity from the taxonomy, and remediation recipes.
+Each skill runs on LLM inference alone. Add a `UXUI_API_KEY` to unlock enriched output: principle codes, 2,400+ academic citations, severity from the taxonomy, and remediation recipes.
 
-**Get an API key:** [uxuiprinciples.com/en/checkout](https://uxuiprinciples.com/en/checkout)
+**Free, no key:** the [context pack for Cursor, Claude Code and Windsurf](https://uxuiprinciples.com/en/tools/ide-packs?utm_source=github&utm_medium=referral&utm_campaign=agent-skills) and the [MCP server](https://www.npmjs.com/package/@uxuiprinciples/mcp-server).
+
+**Get an API key:** it comes with the Principles Library, $59/year. [uxuiprinciples.com/en/checkout](https://uxuiprinciples.com/en/checkout?utm_source=github&utm_medium=referral&utm_campaign=agent-skills)
 
 ---
 
@@ -59,11 +61,11 @@ Without a key, each skill evaluates using LLM inference and returns generic find
 With a key (pro tier), the toolbox calls return:
 - Principle codes (`F.1.1.02`, `S.1.3.01`, etc.) from the full 195-principle taxonomy
 - `aiSummary` fields with concise, citation-backed descriptions
-- `businessImpact` data from 2,300+ peer-reviewed sources
+- `businessImpact` data from 2,400+ peer-reviewed sources
 - `vibeCodingPrompts` for component-level implementation guidance
 - UX smell remediation recipes with step-by-step fixes
 
-**Plans:** [uxuiprinciples.com/en/checkout](https://uxuiprinciples.com/en/checkout). API Access from $19/yr.
+**Plan:** the API key is included in the Principles Library, $59/year. [uxuiprinciples.com/en/checkout](https://uxuiprinciples.com/en/checkout?utm_source=github&utm_medium=referral&utm_campaign=agent-skills)
 
 ---
 
@@ -84,6 +86,6 @@ The skills reference the uxuiprinciples 6-part taxonomy:
 
 ## License
 
-Skills are free to use and distribute. API access for enriched output requires a paid plan.
+Skills are free to use and distribute. API access for enriched output comes with the Principles Library ($59/year).
 
 [uxuiprinciples.com](https://uxuiprinciples.com)
